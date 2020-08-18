@@ -65,11 +65,11 @@ function validar(){
         alert("máximo 15 carácteres");
         return false;
     }
-    else if(telefono=="string"){
+    else if( isNaN(telefono)){
         alert("sólo carácteres numéricos");
         return false;
     }
-    var saludo="Hola"+" "+nombre+" "+ apellidos+" gracias por registrarte con nosotros!";
+    var saludo="Hola"+" "+ usuario +" gracias por registrarte con nosotros!";
 
     alert(saludo);
 }
